@@ -34,7 +34,7 @@ def generate_rand_no(request):
         request.session['after']= (time +timedelta(hours=1)).__str__()
     return render(request, 'random_no.html', {
         'randomnumber': rand_no,
-        'remaining':count
+
     })
 
 @login_required
