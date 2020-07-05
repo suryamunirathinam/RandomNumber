@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="An application that helps you pick a random number for you"
+    />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link
+      href="https://fonts.googleapis.com/css?family=Pattaya|Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+<title>Random Number | Genenerate your random No</title>
+<body>
+     <header class="main-head">
+      <nav>
+        <h1 id="logo">Random Number Generator</h1>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+            {% if user.is_authenticated %}
+          <li><a href="{% url 'logout' %}">Logout</a></li>
+                <p>{{ user.username }}</p>
+            {% else %}
+                <li><a href="{% url 'signup' %}">Sign up</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            {% endif %}
+        </ul>
+      </nav>
+    </header>
+        {% block content %}
+        {% endblock %}
+
+</body>
+</html>

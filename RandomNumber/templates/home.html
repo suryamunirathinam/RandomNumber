@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+     <section class="hero">
+        <h2>Generate random number</h2>
+        <h3>
+          Hello, {% if user.is_authenticated %}{{ user.username }}{% else %} Guest User{% endif %}
+        </h3>
+
+        <div class="button-sep"><button><a href="{% url 'secret' %}">Get Number</a></button></div>
+        <div class="button-sep"><button><a href="{% url 'limits' %}">Remaining limit</a></button></div>
+      </section>
+{% endblock %}

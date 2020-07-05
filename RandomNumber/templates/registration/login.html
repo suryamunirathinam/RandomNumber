@@ -1,0 +1,20 @@
+{% extends 'base.html'  %}
+{% block content %}
+    <section id="form">
+        <div class="form-wrapper">
+          <header class="form-head">
+            <h2>Login</h2>
+          </header>
+          <form method="post" action="">
+            <div class="login-form">
+              {% csrf_token %}
+              {{ form }}
+
+            </div>
+
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </section>
+
+{% endblock %}
