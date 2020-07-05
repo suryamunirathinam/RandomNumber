@@ -6,6 +6,9 @@
         <header class="rand-head">
           <h2>Your Remaining limit is   </h2>
             <h3>{{ Remaininglimit }}</h3>
+            <button><a href="{% url 'home' %}">Back</a></button>
+           <button><a href="{% url 'limits' %}">Remaining limit</a></button>
+
         </header>
       </section>
 {% endblock %}

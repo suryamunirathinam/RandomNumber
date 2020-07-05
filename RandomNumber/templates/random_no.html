@@ -6,8 +6,11 @@
           <h3>
                 {{ remaining }}
           </h3>
+        <div class="buttons">
+            <button><a href="{% url 'home' %}">Back</a></button>
+            <button><a href="{% url 'secret' %}">Get Number</a></button>
 
-
+        </div>
         </header>
       </section>
 {% endblock %}

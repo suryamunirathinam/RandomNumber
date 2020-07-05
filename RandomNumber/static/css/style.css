@@ -44,7 +44,7 @@ button {
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
-  transition: background 0.5s ease-in-out;
+  transition: background ease-in-out;
 }
 button:hover {
   background: #27394e;
@@ -238,12 +238,12 @@ footer ul {
   align-items: center;
 }
 
-/* Button focus to make website accessible */
+
 
 button:focus {
   background: #2c3f57;
   outline-style: solid;
-  outline-color: cornflowerblue;
+  outline-color: #072958;
 }
 
 /* Media Query */
