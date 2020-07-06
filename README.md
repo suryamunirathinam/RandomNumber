@@ -4,6 +4,16 @@ Here Django-ratelimit is used for limiting.
 
 ## Installation
 
+setup virtualenvironment and clone repository
+
+```bash
+sudo apt-get install python3-venv
+python3 -m venv ./venv
+source ./venv/bin/activate
+git clone https://github.com/suryamunirathinam/RandomNumber.git
+cd RandomNumber
+````
+
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dependencies
 
 ```bash
